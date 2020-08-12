@@ -1,0 +1,12 @@
+.cache/
+public/
+node_modules/
+/dist
+package.json
+package-lock.json
+tsconfig.json
+cypress.json
+gatsby-*.js
+.eslintrcignore
+.prettierrc.json
+.prettierignore
