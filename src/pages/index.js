@@ -28,18 +28,10 @@ const IndexPage = ({
       <SEO title='Matthew Secrist' />
       <SuperText>Hello</SuperText>
       <div>
-        <h1>My name is Matthew Secrist.</h1>
+        <h1>ホリイケのWebサイトです。</h1>
         <p>
-          Software Engineer at{' '}
-          <a href='http://www.articulate.com'>Articulate</a>.
+          ポートフォリオサイトも兼ねています。現在制作中なので、そのうちコンテンツを追加していきます。
         </p>
-        <p>
-          I love to work with Javascript, NodeJS, and Elixir. I’ve dabbled in
-          Ruby, Python and Erlang. My front end framework of choice is React,
-          but I've got some experience with Vue and Ember as well.
-        </p>
-
-        <p>Sometimes I write things, sometimes I make things.</p>
 
         <RecentPostsContainer>
           <h1 className='title'>Recent Posts</h1>
