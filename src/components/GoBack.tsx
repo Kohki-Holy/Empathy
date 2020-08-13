@@ -2,7 +2,12 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { ArrowBack } from 'styled-icons/boxicons-regular/ArrowBack';
 
-const GoBack = ({ to, name }) => (
+type Props = {
+  to: string;
+  name: string;
+};
+
+const GoBack: React.FC<Props> = ({ to, name }) => (
   <p>
     <Link to={to}>
       <ArrowBack size={16} /> {name}
