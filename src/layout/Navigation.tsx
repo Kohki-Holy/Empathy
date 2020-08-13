@@ -62,7 +62,7 @@ const NavLinksContainer = styled.nav`
   }
 `;
 
-const Navigation = () => {
+const Navigation: React.FC = () => {
   const [navExpanded, toggleNavExpand] = useState(false);
 
   const NavLinks = () => (

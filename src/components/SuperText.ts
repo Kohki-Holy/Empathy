@@ -1,19 +1,8 @@
 import styled from 'styled-components';
 
 const SuperText = styled.h1`
-  @media screen and (max-width: 350px) {
-    font-size: 2.5rem;
-  }
-
-  @media screen and (min-width: 350px) {
-    font-size: 3.5rem;
-  }
-
-  @media screen and (min-width: 700px) {
-    font-size: 5rem;
-  }
-
-  padding: 2vh 0 10vh 0;
+  font-size: 1.5rem;
+  padding: 12.5em 0 20em 0;
   margin: 0;
   &::before {
     content: '<';
