@@ -4,6 +4,17 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 
+type Props = {
+  title: string;
+  description: string;
+  slug: string;
+  preview: {
+    childImageSharp: {
+      fixed: any;
+    };
+  };
+};
+
 const Card = styled.div`
   height: 100%;
   width: 100%;
@@ -64,7 +75,7 @@ const Card = styled.div`
   }
 `;
 
-const PortfolioListing = ({
+const PortfolioListing: React.FC<Props> = ({
   title,
   description,
   slug,
