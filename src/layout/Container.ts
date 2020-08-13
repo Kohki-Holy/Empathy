@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
-  margin-top: 10vh;
+  margin-top: 5vh;
 `;
 
 export default Container;

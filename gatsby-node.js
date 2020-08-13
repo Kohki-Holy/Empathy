@@ -17,7 +17,7 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  const blogTemplate = path.resolve('src/layout/PostLayout.js')
+  const blogTemplate = path.resolve('src/layout/PostLayout.tsx')
 
   blogPosts.data.allMarkdownRemark.edges.forEach(edge => {
     const { slug } = edge.node.frontmatter

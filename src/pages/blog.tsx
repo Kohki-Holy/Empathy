@@ -7,7 +7,13 @@ import SuperText from '../components/SuperText';
 import Container from '../layout/Container';
 import SEO from '../components/SEO';
 
-const BlogPage = ({
+import { PagesBlogQuery } from '../../types/graphql-types';
+
+type Props = {
+  data: PagesBlogQuery;
+};
+
+const BlogPage: React.FC<Props> = ({
   data: {
     allMarkdownRemark: { edges },
   },
@@ -32,7 +38,7 @@ const BlogPage = ({
 export default BlogPage;
 
 export const pageQuery = graphql`
-  {
+  query PagesBlog {
     allMarkdownRemark(
       filter:{fileAbsolutePath: {regex: "/(\/content\/posts)/.*\\.md$/"}}, 
       sort: { fields: frontmatter___date, order: DESC }) {

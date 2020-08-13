@@ -6,11 +6,14 @@ import { Github } from 'styled-icons/feather/Github';
 import { Twitter } from 'styled-icons/feather/Twitter';
 import { Mail } from 'styled-icons/feather/Mail';
 
+import { deprecate } from 'util';
+
 const ICON_SIZE = '32';
 
 const Link = styled.a`
   padding: 1em;
 `;
+
 const SocialMediaContainer = styled.div`
   display: flex;
   justify-content: space-around;
@@ -27,19 +30,28 @@ const SocialMediaContainer = styled.div`
     }
   }
 `;
-const SocialMediaLinks = () => (
-  <StaticQuery
-    query={graphql`
-      {
-        site {
-          siteMetadata {
-            twitter
-            github
-            email
-          }
-        }
+
+const query = graphql`
+  query componentsSocialMediaLinks {
+    site {
+      siteMetadata {
+        twitter
+        github
+        email
       }
-    `}
+    }
+  }
+`;
+
+declare module 'react' {
+  interface AnchorHTMLAttributes<T> extends HTMLAttributes<T> {
+    alt?: string;
+  }
+}
+
+const SocialMediaLinks: React.FC = () => (
+  <StaticQuery
+    query={query}
     render={({
       site: {
         siteMetadata: { twitter, github, email },

@@ -7,6 +7,12 @@ import GoBack from '../components/GoBack';
 import SEO from '../components/SEO';
 import moment from 'moment';
 
+import { LayoutPostLayoutQuery } from '../../types/graphql-types';
+
+type Props = {
+  data: LayoutPostLayoutQuery;
+};
+
 const PostContainer = styled.div`
   max-width: 800px;
   margin: 0 auto;
@@ -18,7 +24,7 @@ const PostContainer = styled.div`
   }
 `;
 
-const PostLayout = ({
+const PostLayout: React.FC<Props> = ({
   data: {
     markdownRemark: {
       frontmatter: { slug, title, description, date },
@@ -29,7 +35,7 @@ const PostLayout = ({
   return (
     <Layout>
       <SEO
-        title={`${title} - Matthew Secrist`}
+        title={`${title} - Empathy`}
         description={description}
         pathname={`/blog/${slug}`}
       />
@@ -44,7 +50,7 @@ const PostLayout = ({
 export default PostLayout;
 
 export const query = graphql`
-  query postBySlug($slug: String!) {
+  query LayoutPostLayout($slug: String!) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       frontmatter {
         slug

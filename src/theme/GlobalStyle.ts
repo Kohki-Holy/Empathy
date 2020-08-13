@@ -9,7 +9,7 @@ const secondaryMid = 'hsl(0, 0%, 35%)';
 const primaryLight = 'hsl(0, 0%, 80%)';
 const secondaryLight = 'hsl(0, 0%, 85%)';
 
-const white = 'hsl(0, 0%, 90%)';
+const white = 'hsl(0, 0%, 100%)';
 
 const black = '#222222';
 const lightWhite = '#FFFFFF';
@@ -71,6 +71,11 @@ const GlobalStyle = createGlobalStyle`
     font-weight: bold;
     text-decoration: none;
     color: var(--primary);
+
+    &:hover {
+      text-decoration: none;
+    }
+
   }
 `;
 
