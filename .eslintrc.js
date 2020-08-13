@@ -4,7 +4,11 @@ module.exports = {
     es2020: true,
     node: true,
   },
-  plugins: ['react', '@typescript-eslint'],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: './tsconfig.json',
+  },
+  plugins: ['@typescript-eslint'],
   extends: [
     'eslint:all',
     'plugin:react/recommended',
@@ -14,6 +18,6 @@ module.exports = {
     'prettier/react',
   ],
   rules: {
-    'react/prop-types': 'off',
+    // 'react/prop-types': 'off',
   },
 };
