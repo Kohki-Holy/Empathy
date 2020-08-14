@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import noflash from './noflash';
 
 export default function HTML(props) {
   return (
@@ -21,11 +20,6 @@ export default function HTML(props) {
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: noflash,
-          }}
-        />
         {props.preBodyComponents}
         <noscript key='noscript' id='gatsby-noscript'>
           This app works best with JavaScript enabled.

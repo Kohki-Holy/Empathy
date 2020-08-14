@@ -37,7 +37,7 @@ const Layout: React.FC<any> = ({ children }) => {
         <Foot>
           <SocialMediaLinks />
           Built by <a href='http://www.gatsbyjs.org'>Gatsby</a>.
-          <p>&copy; Copyright {getCopyrightYear()}, Empathy</p>
+          <p>&copy; Copyright {getCopyrightYear()}, empathy</p>
         </Foot>
       </ContentContainer>
     </React.Fragment>

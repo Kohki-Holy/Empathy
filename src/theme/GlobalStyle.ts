@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const primaryDark = 'hsl(0, 0%, 10%)';
 const secondaryDark = 'hsl(0, 0%, 13%)';
 
-const primaryMid = 'hsl(0, 0%, 30%)';
+const primaryMid = 'hsl(0, 0%, 25%)';
 const secondaryMid = 'hsl(0, 0%, 35%)';
 
 const primaryLight = 'hsl(0, 0%, 80%)';
@@ -47,7 +47,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 400;
     transition: background-color 0.3s ease-in-out;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
 
     text-rendering: optimizeLegibility;
     font-kerning: normal;
@@ -69,7 +69,7 @@ const GlobalStyle = createGlobalStyle`
 
   a {
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--primary);
 
     &:hover {

@@ -21,7 +21,7 @@ const PostListing: React.FC<Props> = ({ slug, title, description, date }) => {
       <Link to={`/blog/${slug}`}>
         <PostTitle>{title}</PostTitle>
       </Link>
-      <sub>{moment(date).format('LL')}</sub>
+      <sub>{moment(date).format('YYYY/MM/DD')}</sub>
       <p>{description}</p>
     </React.Fragment>
   );

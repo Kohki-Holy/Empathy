@@ -4,9 +4,9 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: 'エンパシー Empathy',
+    title: 'エンパシー',
     titleTemplate: '%s',
-    siteUrl: 'https://google.co.jp',
+    siteUrl: 'https://empathy-holy.netlify.app/',
     description:
       '光合成だけで生きたいエンジニア・ホリイケの個人Webサイトです。',
     twitterUsername: '@_mattsecrist',
