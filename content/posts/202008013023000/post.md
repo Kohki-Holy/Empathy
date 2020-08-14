@@ -1,9 +1,9 @@
 ---
 type: 'post'
 slug: '7a8u9ezf8fy23'
-date: 2020-08-13 02:30:00
+date: 2020-08-13T02:30:00+0900
 title: 'VSCode + ESLint + Prettier の設定を完全に理解した【公式の英語ドキュメントに結論書いてた】'
-description: 'VSCode + ESLint + Prettier の設定を完全に理解した【公式の英語ドキュメントに結論書いてた】'
+description: 'ESLint と Prettier の設定に関して検索するとマジで情報が錯綜しすぎてどれが正解か分からないので、諦めて式ドキュメントを読みに行ったところ、普通に結論が書いてたので共有します。'
 ---
 
 # 概要

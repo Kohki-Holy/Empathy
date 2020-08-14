@@ -1,9 +1,12 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
-import Layout from '../layout/layout';
 
+import Layout from '../layout/layout';
 import Container from '../layout/Container';
+import HomeLayout from '../layout/HomeLayout';
+
 import SuperTitle from '../components/SuperTitle';
 import SuperText from '../components/SuperText';
 import SEO from '../components/SEO';
@@ -17,22 +20,18 @@ type Props = {
 
 const PortfolioContainer = styled.section`
   padding-top: 20vh;
+  min-height: 80vh;
   text-align: left;
 
   .title {
-    font-size: 2em;
-    color: var(--text);
+    font-size: 2rem;
+    padding: 0 0 1em;
+    &::before {
+      content: '<title=';
+    }
   }
 `;
-const RecentPostsContainer = styled.section`
-  padding-top: 20vh;
-  text-align: left;
-
-  .title {
-    font-size: 2em;
-    color: var(--text);
-  }
-`;
+const RecentPostsContainer = PortfolioContainer;
 
 const IndexPage: React.FC<Props> = ({
   data: {
@@ -41,13 +40,15 @@ const IndexPage: React.FC<Props> = ({
 }) => (
   <Layout>
     <Container>
-      <SEO title='エンパシー Empathy' />
-      <SuperTitle>エンパシー</SuperTitle>
-      <SuperTitle>堀池幸輝</SuperTitle>
-      <SuperText>Empathy</SuperText>
+      <SEO title='エンパシー' />
+      <HomeLayout>
+        <SuperTitle>エンパシー</SuperTitle>
+        <SuperTitle>堀池幸輝</SuperTitle>
+        <SuperText>empathy</SuperText>
+      </HomeLayout>
       <div>
-        <PortfolioContainer>
-          <h1 className='title'>制作事例</h1>
+        <PortfolioContainer id='past-projects'>
+          <SuperText className='title'>Past.Projects</SuperText>
           <h2>このサイト</h2>
           <p>
             GatsbyJS という React.js を使用した静的サイトジェネレーターで制作。
@@ -57,21 +58,24 @@ const IndexPage: React.FC<Props> = ({
             <a href='https://www.gatsbyjs.org/showcase/www.matthewsecrist.net'>
               Gatsby上で配布されているテーマ
             </a>
-            を元に、伊藤計劃の小説『Harmony』を意識してアレンジしている。
+            を元に、伊藤計劃の小説『ハーモニー』を意識してアレンジしている。
           </p>
           <h2>メモアプリ</h2>
           <p>React.jsの勉強のために制作した。Google Keepの改造版。</p>
         </PortfolioContainer>
-        <RecentPostsContainer>
-          <h1 className='title'>最新記事</h1>
+        <RecentPostsContainer id='recent-articles'>
+          <SuperText className='title'>Recent.Articles</SuperText>
           <div id='recent-posts'>
             {edges.map((post: any) => (
               <PostListing key={post.node.id} {...post.node.frontmatter} />
             ))}
           </div>
+          <p style={{ textAlign: 'left', textIndent: '1em' }}>
+            <Link to='/blog'>記事一覧へ</Link>
+          </p>
         </RecentPostsContainer>
-        <PortfolioContainer>
-          <h1 className='title'>人物説明</h1>
+        <PortfolioContainer id='about-owner'>
+          <SuperText className='title'>About.Owner</SuperText>
           <p>ホリイケ コウキ</p>
           <p>1994年生まれ。Web制作実務 7年。</p>
           <p>

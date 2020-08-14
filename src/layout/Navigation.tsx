@@ -41,23 +41,30 @@ const NavMenu = styled.div`
 const NavLinksContainer = styled.nav`
   text-align: center;
   width: 200px;
+  &::before {
+    font-size: 2rem;
+    display: block;
+    color: var(--white);
+    content: 'Contents';
+  }
   a {
-    color: var(--primary);
+    color: var(--white);
     padding: 10px 0px 10px 0px;
+    text-decoration: none;
+    font-weight: normal;
 
     &:hover {
       color: var(--white);
     }
-  }
-
-  & .active {
-    &::before {
-      content: '{ ';
-      color: var(--white);
-    }
-    &::after {
-      content: ' }';
-      color: var(--white);
+    & .active {
+      &::before {
+        content: '{ ';
+        color: var(--white);
+      }
+      &::after {
+        content: ' }';
+        color: var(--white);
+      }
     }
   }
 `;
@@ -69,13 +76,22 @@ const Navigation: React.FC = () => {
     <NavLinksContainer>
       <h2>
         <Link to='/' activeClassName='active'>
-          home
+          Home
         </Link>
       </h2>
-
       <h2>
-        <Link to='/blog' activeClassName='active'>
-          blog
+        <Link to='/#past-projects' activeClassName='active'>
+          Past.Projects
+        </Link>
+      </h2>
+      <h2>
+        <Link to='/#recent-articles' activeClassName='active'>
+          Recent.Articles
+        </Link>
+      </h2>
+      <h2>
+        <Link to='/#about-owner' activeClassName='active'>
+          About.Owner
         </Link>
       </h2>
     </NavLinksContainer>
