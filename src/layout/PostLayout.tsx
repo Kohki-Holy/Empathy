@@ -41,7 +41,7 @@ const PostLayout: React.FC<Props> = ({
       />
       <GoBack to='/blog' name='Blog' />
       <h1>{title}</h1>
-      <sub>{moment(date).format('LL')}</sub>
+      <sub>{moment(date).format('YYYY/MM/DD hh:mm')}</sub>
       <PostContainer dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   );
