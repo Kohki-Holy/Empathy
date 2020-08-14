@@ -18,7 +18,7 @@ type Props = {
   data: PagesIndexQuery;
 };
 
-const PortfolioContainer = styled.section`
+const RecentPostsContainer = styled.section`
   padding-top: 20vh;
   min-height: 80vh;
   text-align: left;
@@ -31,7 +31,12 @@ const PortfolioContainer = styled.section`
     }
   }
 `;
-const RecentPostsContainer = PortfolioContainer;
+
+const PortfolioContainer = styled(RecentPostsContainer)`
+  & h2 {
+    padding-top: 1em;
+  }
+`;
 
 const IndexPage: React.FC<Props> = ({
   data: {
@@ -60,8 +65,16 @@ const IndexPage: React.FC<Props> = ({
             </a>
             を元に、伊藤計劃の小説『ハーモニー』を意識してアレンジしている。
           </p>
-          <h2>メモアプリ</h2>
-          <p>React.jsの勉強のために制作した。Google Keepの改造版。</p>
+          <h2>ESLint + Prettierの設定</h2>
+          <p>
+            当サイトのブログ記事。あまりに会心の出来で解決したときが気持ちよすぎたので制作事例として載せてしまった。
+          </p>
+          <p>
+            <Link to='/blog/7a8u9ezf8fy23'>
+              VSCode + ESLint + Prettier
+              の設定を完全に理解した【公式の英語ドキュメントに結論書いてた】
+            </Link>
+          </p>
         </PortfolioContainer>
         <RecentPostsContainer id='recent-articles'>
           <SuperText className='title'>Recent.Articles</SuperText>

@@ -10,7 +10,7 @@ type Props = {
   date: string;
 };
 
-const PostTitle = styled.h1`
+const PostTitle = styled.h2`
   padding-bottom: 0;
   margin-bottom: 0;
 `;

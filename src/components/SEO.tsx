@@ -9,20 +9,6 @@ type Props = {
   article?: boolean;
 };
 
-const query = graphql`
-  query componentsSEO {
-    site {
-      siteMetadata {
-        defaultTitle: title
-        defaultDescription: description
-        siteUrl: siteUrl
-        twitterUsername
-        titleTemplate
-      }
-    }
-  }
-`;
-
 const SEO: React.FC<Props> = (props) => (
   <StaticQuery
     query={query}
@@ -64,10 +50,7 @@ const SEO: React.FC<Props> = (props) => (
             {seo.description && (
               <meta name='twitter:description' content={seo.description} />
             )}
-            <meta
-              name='keywords'
-              content={`web developer, web developer in boone iowa, front end developer, elixir, react, javascript, matthew secrist, matthewsecrist`}
-            />
+            <meta name='keywords' content={`empathy`} />
           </Helmet>
         </React.Fragment>
       );
@@ -83,3 +66,17 @@ SEO.defaultProps = {
 };
 
 export default SEO;
+
+const query = graphql`
+  query componentsSEO {
+    site {
+      siteMetadata {
+        defaultTitle: title
+        defaultDescription: description
+        siteUrl: siteUrl
+        twitterUsername
+        titleTemplate
+      }
+    }
+  }
+`;
