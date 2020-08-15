@@ -8,7 +8,7 @@ import Layout from '../layout/layout';
 import Container from '../layout/Container';
 import HomeLayout from '../layout/HomeLayout';
 
-import SuperTitle from '../components/SuperTitle';
+// import SuperTitle from '../components/SuperTitle';
 import SuperText from '../components/SuperText';
 import SEO from '../components/SEO';
 import PostListing from '../components/PostListing';
