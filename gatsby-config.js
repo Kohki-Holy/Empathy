@@ -10,9 +10,9 @@ module.exports = {
     description:
       '光合成だけで生きたいエンジニア・ホリイケの個人Webサイトです。',
     twitterUsername: '@_mattsecrist',
-    twitter: 'https://twitter.com/hoky_OTP',
-    github: 'http://www.github.com/kohky-holy',
-    email: 'kohky.holy@gmail.com',
+    twitter: 'https://twitter.com/holy_OTP',
+    github: 'http://www.github.com/kohki-holy',
+    email: 'kohki.holy@gmail.com',
   },
   plugins: [
     'gatsby-plugin-typescript',
