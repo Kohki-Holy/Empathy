@@ -9,7 +9,7 @@ module.exports = {
     siteUrl: 'https://empathy-holy.netlify.app/',
     description:
       '光合成だけで生きたいエンジニア・ホリイケの個人Webサイトです。',
-    twitterUsername: '@_mattsecrist',
+    twitterUsername: '@holy_OTP',
     twitter: 'https://twitter.com/holy_OTP',
     github: 'http://www.github.com/kohki-holy',
     email: 'kohki.holy@gmail.com',
