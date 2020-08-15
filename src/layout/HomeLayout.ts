@@ -8,7 +8,7 @@ const HomeLayout = styled.header`
   & h1 {
     padding: 0;
     display: flex;
-    align-items: end;
+    align-items: flex-end;
   }
   & p {
     font-size: 1rem;
