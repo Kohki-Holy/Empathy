@@ -36,19 +36,14 @@ const SEO: React.FC<Props> = (props) => (
             <meta name='description' content={seo.description} />
             <meta property='og:locale' content='en' />
             {seo.url && <meta property='og:url' content={seo.url} />}
-            {seo.article && <meta property='og:type' content='article' />}
             {seo.title && <meta property='og:title' content={seo.title} />}
-
+            {seo.article && <meta property='og:type' content='article' />}
             {seo.description && (
               <meta property='og:description' content={seo.description} />
             )}
-
+            <meta name='twitter:card' content='summary' />
             {twitterUsername && (
-              <meta name='twitter:creator' content={twitterUsername} />
-            )}
-            {seo.title && <meta name='twitter:title' content={seo.title} />}
-            {seo.description && (
-              <meta name='twitter:description' content={seo.description} />
+              <meta name='twitter:site' content={'@' + twitterUsername} />
             )}
             <meta name='keywords' content={`empathy`} />
           </Helmet>
