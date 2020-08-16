@@ -79,7 +79,7 @@ const IndexPage: React.FC<Props> = ({
         <p>
           ホリイケのブログ兼ポートフォリオサイト的な個人Webサイトです。
           <br />
-          Web制作をメインに業務に携わってきたので技術面では未熟です。技術に対する好奇心だけで突っ走っています。
+          Web制作をメインに業務に携わってきたので開発面では未熟です。技術に対する好奇心だけで突っ走っています。
         </p>
       </HomeLayout>
       <div>
@@ -87,14 +87,16 @@ const IndexPage: React.FC<Props> = ({
           <SuperText className='title'>Past.Projects</SuperText>
           <h2>このサイト</h2>
           <p>
-            GatsbyJS という React.js を使用した静的サイトジェネレーターで制作。
+            <a href='https://github.com/Kohki-Holy/Empathy.git'>Github</a>
+            。GatsbyJS という React.js
+            を使用した静的サイトジェネレーターで制作しました。
           </p>
           <p>
             デザインは
             <a href='https://www.gatsbyjs.org/showcase/www.matthewsecrist.net'>
               Gatsby上で配布されているテーマ
             </a>
-            を元に、伊藤計劃の小説『ハーモニー』を意識してアレンジしている。
+            を元に、伊藤計劃の小説『ハーモニー』を意識してアレンジしています。
           </p>
           <p>
             使用技術：HTML、CSS in
@@ -102,15 +104,23 @@ const IndexPage: React.FC<Props> = ({
           </p>
           <h2>ESLint + Prettierの設定</h2>
           <p>
-            当サイトのブログ記事。あまりに会心の出来で、解決したときが気持ちよすぎたので制作事例として載せてしまった。
+            ブログ記事です。英語ドキュメントに書いてたことをそのまま日本語で書いただけですが、検索しても根拠のありそうな情報がイマイチでてこなかったので自分で書きました。
           </p>
-          <p>使用技術：Google検索、英語を読む心構え、Visual Studio Code</p>
           <p>
             <Link to='/blog/7a8u9ezf8fy23'>
               VSCode + ESLint + Prettier
               の設定を完全に理解した【公式の英語ドキュメントに結論書いてた】
             </Link>
           </p>
+          <p>使用技術：Google検索、英語を読む心構え、Visual Studio Code</p>
+          <h2>note記事</h2>
+          <p>
+            noteで趣味よりの内容を記事にしています。内容は料理、マンガ、ゲーム、お酒で一貫性はあまりありません。
+          </p>
+          <p>
+            <a href='https://note.com/holy_otp'>記事一覧</a>
+          </p>
+          <p>使用技術：好奇心、時間、お金、いいものを共有したい気持ち</p>
         </PortfolioContainer>
         <RecentPostsContainer id='recent-articles'>
           <SuperText className='title'>Recent.Articles</SuperText>
