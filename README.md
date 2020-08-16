@@ -1,9 +1,13 @@
+
+サイトURL:https://empathy-holy.netlify.app
+
 # 概要
 
 _GatsbyJS_ という静的サイトジェネレーターで作成した、ブログつきポートフォリオサイト。  
-デザインは Gatsby 公式 Web サイトで配布されているテーマを元に、伊藤計劃の小説『ハーモニー』を意識してアレンジしている。  
-[https://www.gatsbyjs.org/showcase/www.matthewsecrist.net](https://www.gatsbyjs.org/showcase/www.matthewsecrist.net)  
+デザインは GatsbyJS 公式 Web サイトで配布されているテーマを元に、伊藤計劃の小説『ハーモニー』を意識してアレンジしてまる。  
+https://www.gatsbyjs.org/showcase/www.matthewsecrist.net
 また、主要なコンポーネントを TypeScript 化している。
+デプロイ先はNetlifyで、Githubのレポジトリ指定するだけでCI/CDラインも引いてくれるのでスーパーミラクルハイパーウルトラ便利でした。
 
 # 作成目的
 
