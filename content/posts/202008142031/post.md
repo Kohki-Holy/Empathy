@@ -3,7 +3,7 @@ type: 'post'
 slug: '94g7i4pkg9jwi'
 date: 2020-08-14T20:33:00+0900
 title: '【React】GatsbyJSをやるためにReactの基本だけを触ってみる'
-description: 'TypeScript公式サイトもこれで作っているとウワサのGatsbyJSをお勉強してみた。その1'
+description: 'TypeScript公式サイトもこれで作っているとウワサのGatsbyJSをお勉強してみた。その2'
 ---
 
 # 概要
