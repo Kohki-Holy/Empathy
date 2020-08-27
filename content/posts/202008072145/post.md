@@ -33,7 +33,7 @@ Vagrant 環境なら以下コマンドで両方終わる。
 vagrant plugin install vagrant-docker-compose
 ```
 
-→ [正式な手順は以前の記事](https://holy1994.qrunch.io/entries/WzWCCrBUx9GpwfGR)
+→ [正式な手順は以前の記事](./3mg3jup5tty6c)
 
 # 3. Web サーバー（ _Nginx_ ）をたてる
 
