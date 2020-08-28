@@ -3,7 +3,7 @@ type: 'post'
 slug: 'z3ey23caazkx3'
 date: 2020-08-09T00:02:00+0900
 title: '個人学習メモ：Gatsby で React 開発環境を構築してみようと思った'
-description: 'TypeScript公式サイトもこれで作っているとウワサのGatsbyJSをお勉強してみた。その2'
+description: 'TypeScript公式サイトもこれで作っているとウワサのGatsbyJSをお勉強してみた。その1'
 ---
 
 # 目的
