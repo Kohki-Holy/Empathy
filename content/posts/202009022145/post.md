@@ -2,7 +2,7 @@
 type: 'post'
 slug: 'N771JhnmafEBZ'
 date: 2020-09-02T21:45:00+0900
-title: '【React】React Hooks がめちゃんこ便利だという話'
+title: '【React】React Hooks がめちゃんこ便利だという話 State編'
 description: 'React Hooks あればもう class コンポーネントいらねーじゃん！（早計）'
 ---
 
